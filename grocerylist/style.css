@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.groceries {
+    border: 1px solid black;
+
+    width: 600px;
+    min-height: 100vh;
+    margin: auto;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 24px 0;
+}
+
+#itemList h2 button {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
+    font-size: 2rem;
+}

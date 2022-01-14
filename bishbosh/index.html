@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bish Bosh 2.0</title>
+</head>
+<body>
+<div id="header">
+    <h1>Bish Bosh 2.0</h1>
+    <h3>Bish bosh är ett räknesätt där användaren tar ett tal som appen ska räkna till, sen ska användaren välja två olika nummer. Om något av tlane som appen ger ut går att dividera med dessa tal, så kommer appen skicka ut "bish" eller "bosh".</h3>
+</div class="container">
+    <h4>What to divide things by.</h4>
+    <input type="number" id="divisible" min=0 oninput="validity.valid||(value='');"/>
+    <input type="number" id="bish" min=0 max=10 oninput="validity.valid||(value='');"/>
+    <input type="number" id="bosh" min=0 max=10 oninput="validity.valid||(value='');"/>
+
+    <button type="button" onclick="bishbosh()">Bish</button>
+
+    <p id="change"></p>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="bishbosh.js"></script>
+
+    <div id="footer">&copy; Copyright 2022 Mattias Celius</div>
+</body>
+</html>
