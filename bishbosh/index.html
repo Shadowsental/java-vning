@@ -12,11 +12,21 @@
     <h1>Bish Bosh 2.0</h1>
     <h3>Bish bosh är ett räknesätt där användaren tar ett tal som appen ska räkna till, sen ska användaren välja två olika nummer. Om något av tlane som appen ger ut går att dividera med dessa tal, så kommer appen skicka ut "bish" eller "bosh".</h3>
 </div class="container">
-    <h4>What to divide things by.</h4>
-    <input type="number" id="divisible" min=0 oninput="validity.valid||(value='');"/>
-    <input type="number" id="bish" min=0 max=10 oninput="validity.valid||(value='');"/>
-    <input type="number" id="bosh" min=0 max=10 oninput="validity.valid||(value='');"/>
+    <div class="row" id="divisibleRow">
+        <h4>What to divide things by.</h4>
+        <input type="number" id="divisible" min=0 oninput="validity.valid||(value='');"/>
+    </div>
 
+    <div class="row" id="bishRow">
+        <h4>If a number is divisible with this, it becomes "bish".</h4>
+        <input type="number" id="bish" min=0 max=10 oninput="validity.valid||(value='');"/>
+    </div>
+
+    <div class="row" id="boshRow">
+        <h4>If a number is divisible with this, it becomes "bosh".</h4>
+        <input type="number" id="bosh" min=0 max=10 oninput="validity.valid||(value='');"/>
+    </div>
+    
     <button type="button" onclick="bishbosh()">Bish</button>
 
     <p id="change"></p>
